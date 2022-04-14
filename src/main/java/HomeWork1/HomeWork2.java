@@ -1,9 +1,10 @@
-package ru.gb.eremov;
+package HomeWork1;
 
-public class HomeWorkApp {
-
+public class HomeWork2 {
     public static void main(String[] args) {
+        System.out.println(Task1(1,2));
         Task2(0);
+        System.out.println(Task3(3));
         Task4();
         System.out.println(Task5(-4));
     }
@@ -20,21 +21,21 @@ public class HomeWorkApp {
     public static void Task2(int a) {
         if (a >= 0) {
             System.out.println("Число положительное");
-        }
-        else {
+        } else {
             System.out.println("Число отрицательное");
         }
 
     }
 
-    public static boolean Task3(int a) {
+    public static boolean Task3 (int a) {
         if (a < 0) {
             return true;
         }
-        else  {
+        else {
             return false;
         }
     }
+
     public static void Task4() {
         String a = "Hello World!";
         int b = 5;
@@ -42,13 +43,14 @@ public class HomeWorkApp {
             System.out.println(a);
         }
     }
-    public static boolean Task5 (int year) {
-            if (year % 4 == 0 || year % 100 == 0 || year % 400 == 0) {
-                return true;
-            }
-        return false;
-    }
-    }
 
-
+    public static boolean Task5(int year) {
+        if (year % 4 == 0 || year % 100 == 0 || year % 400 == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
 
