@@ -1,48 +1,55 @@
 package ru.gb.eremov;
 
 public class HomeWorkApp {
-    public static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
-    public static void checkSumSign() {
-        int a = 66;
-        int b = 56;
-        int c = a + b;
-        if (c >= 0) {
-            System.out.println("Сумма положительная");
-        }
-        else {
-            System.out.println("Сумма отрицательная");
-        }
-        }
-    public static void printColor() {
-        int value = -10;
-        if (value <= 0) {
-            System.out.println("Красный");
-        } else if (value >= 0 && value < 100) {
-            System.out.println("Желтый");
-        } else if (value > 100) {
-            System.out.println("Зеленый");
-        }
-    }
-    public static void compareNumbers() {
-        int a = 1;
-        int b = 2;
-        if (a >= b) {
-            System.out.println("a >= b");
-        }
-        else {
-            System.out.println("a < b");
-        }
 
-    }
     public static void main(String[] args) {
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
+        Task2(0);
+        Task4();
+        System.out.println(Task5(-4));
+    }
+
+    public static boolean Task1(int a, int b) {
+        if (a + b < 10 || a + b > 20) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public static void Task2(int a) {
+        if (a >= 0) {
+            System.out.println("Число положительное");
+        }
+        else {
+            System.out.println("Число отрицательное");
+        }
 
     }
-}
+
+    public static boolean Task3(int a) {
+        if (a < 0) {
+            return true;
+        }
+        else  {
+            return false;
+        }
+    }
+    public static void Task4() {
+        String a = "Hello World!";
+        int b = 5;
+        for (int i = 0; i < b; i++) {
+            System.out.println(a);
+        }
+    }
+    public static boolean Task5 (int year) {
+            if (year % 4 == 0 || year % 100 == 0 || year % 400 == 0) {
+                return true;
+            }
+        return false;
+    }
+
+    }
+
+
+
