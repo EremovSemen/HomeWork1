@@ -10,9 +10,9 @@ public class Hw3 {
         task4();
         task5(10,5);
         task6();
-        int [] array = {1,2,3,4,5,6,8};
+        int [] array = {3,2,1,0,1,2,3};
         System.out.println(task7(array));
-        task8(array,10);
+        task8(array,2);
         System.out.println(Arrays.toString(array));
     }
 
